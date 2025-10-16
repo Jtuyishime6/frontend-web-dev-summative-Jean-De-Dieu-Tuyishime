@@ -3,7 +3,7 @@
 A responsive Built with vanilla JavaScript, HTML, and CSS.
 
 **Live Demo:** [Your Youtube URL Here]
-**Github Pages** :[link]
+**Github Pages** :[https://jtuyishime6.github.io/frontend-web-dev-summative-Jean-De-Dieu-Tuyishime/]
 
 **Author:** Jean de Dieu Tuyishime  
 **Role:** Software Engineering Student at ALU  
@@ -370,4 +370,5 @@ This project is created for educational purposes as part of the ALU Software Eng
 
  Email: [j.tuyishime6@alustudent.com](mailto:j.tuyishime6@alustudent.com)  
  GitHub: [github.com/Jtuyishime6](https://github.com/Jtuyishime6)  
+
  Location: Kigali, Rwanda.
