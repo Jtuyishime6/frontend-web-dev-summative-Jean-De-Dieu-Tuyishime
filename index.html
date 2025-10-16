@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campus Event Planner - To help Manage your academic and social events at African Leadership University">
+    <meta name="author" content="Jean de Dieu Tuyishime">
+    <title>Campus Event Planner</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body class="light-theme">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <img 
+                        src="assets/logo.png" 
+                        alt="Campus Event Planner Logo" 
+                        class="logo-image" 
+                        aria-hidden="true"
+                    >
+                    Campus Event Planner
+                </h1>
+                <nav class="header-nav">
+                   <button id="about-btn" class="icon-btn" aria-label="View profile and about information">
+                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                </button>
+
+                    <button id="settings-btn" class="icon-btn" aria-label="Open settings">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V22a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0-.33-1.82 1.65 1.65 0 0 0-1.51-1H2a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H6a1.65 1.65 0 0 0 1-1.51V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V8a1.65 1.65 0 0 0 1.51 1H22a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </button>
+                    
+                    <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="main">
+        <div class="container">
+            <div id="event-manager-content">
+                <section class="stats-section" aria-label="Event Statistics">
+                    <h2 class="visually-hidden">Dashboard Statistics</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="stat-total">0</div>
+                                <div class="stat-label">Total Events</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="stat-completed">0</div>
+                                <div class="stat-label">Completed</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="stat-hours">0h</div>
+                                <div class="stat-label">Total Hours</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="stat-top-tag">None</div>
+                                <div class="stat-label">Top Category</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="4" height="16" x="2" y="6" rx="1"></rect>
+                                    <rect width="4" height="12" x="10" y="10" rx="1"></rect>
+                                    <rect width="4" height="20" x="18" y="2" rx="1"></rect>
+                                </svg>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="stat-recent">0</div>
+                                <div class="stat-label">Last 7 Days</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="status-message" class="status-message hidden" role="status" aria-live="polite"></div>
+
+                <section class="controls-section">
+                    <div class="controls-row">
+                        <div class="search-box">
+                            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                            <input 
+                                type="text" 
+                                id="search-input" 
+                                class="search-input" 
+                                placeholder="Search events (supports regex)..."
+                                aria-label="Search events using text or regex patterns"
+                            >
+                        </div>
+                        
+                        <div class="filter-group">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                            </svg>
+                            <select id="filter-tag" class="filter-select" aria-label="Filter events by category">
+                                <option value="all">All Categories</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="sort-select">Sort:</label>
+                            <select id="sort-select" class="filter-select">
+                                <option value="date">Date</option>
+                                <option value="title">Title</option>
+                                <option value="duration">Duration</option>
+                            </select>
+                        </div>
+
+                        <button id="new-event-btn" class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            New Event
+                        </button>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="export-btn" class="btn btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Export Event
+                        </button>
+                        <button id="import-btn" class="btn btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            Import Event
+                        </button>
+                        <input type="file" id="import-file" accept=".json" class="hidden" aria-label="Import JSON file">
+                    </div>
+                </section>
+
+                <section class="events-section" aria-label="Events List">
+                    <h2 class="visually-hidden">Your Events</h2>
+                    <div id="events-container" class="events-grid"></div>
+                    <div id="empty-state" class="empty-state hidden">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <h3>No Events Found</h3>
+                        <p>Create your first campus event to get started</p>
+                    </div>
+                </section>
+            </div>
+            <section id="about-section" class="about-section hidden">
+                <h2>About</h2>
+                
+                <div class="about-profile">
+                    <img src="assets/profile.jpg" alt="Jean de Dieu Tuyishime" class="profile-img">
+                    
+                    <div class="profile-text">
+                        <p>I am <strong>Jean de Dieu Tuyishime</strong>, I'm a software engineer and a project manager. I study at the ALU, Rwanda. </p>
+                        <p>I built this campus event planner to help myself and all ALU students manage their academic sessions, professional development events, social activities, and campus life engagements, exchange programs, and community events.</p>
+                        <p><strong>Contact:</strong> <a href="mailto:j.tuyishime@alustudent.com">j.tuyishime@alustudent.com</a> | <a href="https://github.com/jeandedieu" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+                    </div>
+                </div>
+                <button id="back-to-planner-btn" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Back to Planner
+                </button>
+            </section>
+            <section id="settings-section" class="settings-section hidden">
+                <h2>Application Settings</h2>
+                
+                <div class="setting-group">
+                    <h3>Theme</h3>
+                    <p>Current theme: <strong id="current-theme-display">Light</strong></p>
+                    <button id="settings-theme-toggle-btn" class="btn btn-secondary">Toggle Theme (Light/Dark)</button>
+                </div>
+
+                <div class="setting-group">
+                    <h3>Data Management</h3>
+                    <p>Exports all event data to a JSON file for backup.</p>
+                    <button id="settings-export-btn" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Export Data
+                    </button>
+                    <p>Imports event data from a JSON file.</p>
+                    <button id="settings-import-btn" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        Import Data
+                    </button>
+                    <input type="file" id="import-file-settings" accept=".json" class="hidden" aria-label="Import JSON file for settings">
+                </div>
+
+                <button id="back-to-planner-from-settings-btn" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Back to Planner
+                </button>
+            </section>
+            </div>
+    </main>
+
+    <div id="event-modal" class="modal-overlay hidden" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">New Event</h2>
+                <button id="modal-close" class="icon-btn" aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <form id="event-form" class="modal-form" novalidate>
+                <div class="form-group">
+                    <label for="event-title">Event Title *</label>
+                    <input type="text" id="event-title" name="title" required aria-required="true">
+                    <span class="error-text" id="error-title"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-date">Date (YYYY-MM-DD) *</label>
+                        <input type="text" id="event-date" name="date" placeholder="2025-10-15" required aria-required="true">
+                        <span class="error-text" id="error-date"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-duration">Duration (hours) *</label>
+                        <input type="text" id="event-duration" name="duration" placeholder="2.5" required aria-required="true">
+                        <span class="error-text" id="error-duration"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-tag">Category/Tag *</label>
+                    <input type="text" id="event-tag" name="tag" placeholder="Academic, Social, Professional Development" required aria-required="true">
+                    <span class="error-text" id="error-tag"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-description">Description</label>
+                    <textarea id="event-description" name="description" rows="3"></textarea>
+                    <span class="error-text" id="error-description"></span>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" id="cancel-btn" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-primary">
+                        <span id="submit-text">Create Event</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
