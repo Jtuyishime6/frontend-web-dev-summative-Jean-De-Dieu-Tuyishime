@@ -1,0 +1,167 @@
+[
+  {
+    "id": "evt_001",
+    "title": "Frontend Development Workshop",
+    "date": "2025-10-20",
+    "duration": "3.5",
+    "tag": "Academic",
+    "description": "Advanced React patterns and modern JavaScript techniques for building scalable web applications",
+    "createdAt": "2025-10-01T10:00:00.000Z",
+    "updatedAt": "2025-10-01T10:00:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_002",
+    "title": "Student Professional Development Session",
+    "date": "2025-10-18",
+    "duration": "2",
+    "tag": "Professional Development",
+    "description": "Career planning and resume building workshop with industry experts",
+    "createdAt": "2025-10-02T14:30:00.000Z",
+    "updatedAt": "2025-10-02T14:30:00.000Z",
+    "completed": true
+  },
+  {
+    "id": "evt_003",
+    "title": "Campus Life Awareness Session",
+    "date": "2025-10-22",
+    "duration": "1.5",
+    "tag": "Social",
+    "description": "Welcome session for new students covering campus facilities and community guidelines",
+    "createdAt": "2025-10-03T09:15:00.000Z",
+    "updatedAt": "2025-10-03T09:15:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_004",
+    "title": "Guest Speaker - Tech Innovation in Africa",
+    "date": "2025-10-25",
+    "duration": "2.5",
+    "tag": "Professional Development",
+    "description": "Leading African tech entrepreneur discusses startup ecosystem and innovation opportunities",
+    "createdAt": "2025-10-04T11:00:00.000Z",
+    "updatedAt": "2025-10-04T11:00:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_005",
+    "title": "Orlando University Exchange Program Info",
+    "date": "2025-10-28",
+    "duration": "1",
+    "tag": "Academic",
+    "description": "Information session about semester exchange opportunities with Orlando University partner institution",
+    "createdAt": "2025-10-05T16:45:00.000Z",
+    "updatedAt": "2025-10-05T16:45:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_006",
+    "title": "Responsible Enterprise Class",
+    "date": "2025-10-30",
+    "duration": "4",
+    "tag": "Academic",
+    "description": "Ethics and sustainability in business practices, social entrepreneurship fundamentals",
+    "createdAt": "2025-10-06T08:00:00.000Z",
+    "updatedAt": "2025-10-06T08:00:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_007",
+    "title": "Entertainment Night - Student Showcase",
+    "date": "2025-11-02",
+    "duration": "3",
+    "tag": "Social",
+    "description": "Student talent show featuring music, dance, poetry and cultural performances",
+    "createdAt": "2025-10-07T13:20:00.000Z",
+    "updatedAt": "2025-10-07T13:20:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_008",
+    "title": "Fireside Chat with ALU Alumni",
+    "date": "2025-11-05",
+    "duration": "1.5",
+    "tag": "Professional Development",
+    "description": "Informal discussion with successful ALU graduates about career paths and entrepreneurship",
+    "createdAt": "2025-10-08T10:30:00.000Z",
+    "updatedAt": "2025-10-08T10:30:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_009",
+    "title": "Norrsken Event - Impact Investing",
+    "date": "2025-11-08",
+    "duration": "2.5",
+    "tag": "Professional Development",
+    "description": "Networking event at Norrsken Kigali focused on impact investing and social ventures",
+    "createdAt": "2025-10-09T15:00:00.000Z",
+    "updatedAt": "2025-10-09T15:00:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_010",
+    "title": "ALX Digital Skills Bootcamp",
+    "date": "2025-11-12",
+    "duration": "6",
+    "tag": "Academic",
+    "description": "Intensive full-day coding bootcamp covering modern web development and cloud technologies",
+    "createdAt": "2025-10-10T07:45:00.000Z",
+    "updatedAt": "2025-10-10T07:45:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_011",
+    "title": "Digital Centre Rwanda Workshop",
+    "date": "2025-11-15",
+    "duration": "3",
+    "tag": "Academic",
+    "description": "Hands-on workshop on digital transformation and technology solutions for Rwanda",
+    "createdAt": "2025-10-11T12:00:00.000Z",
+    "updatedAt": "2025-10-11T12:00:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_012",
+    "title": "Kigali Convention Centre - African Health Summit",
+    "date": "2025-11-20",
+    "duration": "8",
+    "tag": "Professional Development",
+    "description": "Major healthcare innovation conference with panels on digital health and medical technology in Africa",
+    "createdAt": "2025-10-12T06:30:00.000Z",
+    "updatedAt": "2025-10-12T06:30:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_013",
+    "title": "Campus Sports Day",
+    "date": "2025-11-23",
+    "duration": "5",
+    "tag": "Social",
+    "description": "Annual inter-house sports competition with football, basketball, volleyball and track events",
+    "createdAt": "2025-10-13T09:00:00.000Z",
+    "updatedAt": "2025-10-13T09:00:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_014",
+    "title": "EV Startup Pitch Competition",
+    "date": "2025-11-28",
+    "duration": "4",
+    "tag": "Professional Development",
+    "description": "Electric vehicle and sustainable transport startup pitch event with investor panel",
+    "createdAt": "2025-10-14T11:30:00.000Z",
+    "updatedAt": "2025-10-14T11:30:00.000Z",
+    "completed": false
+  },
+  {
+    "id": "evt_015",
+    "title": "End of Semester Project Presentations",
+    "date": "2025-12-05",
+    "duration": "6",
+    "tag": "Academic",
+    "description": "Software engineering students present final capstone projects to faculty and industry partners",
+    "createdAt": "2025-10-15T08:15:00.000Z",
+    "updatedAt": "2025-10-15T08:15:00.000Z",
+    "completed": false
+  }
+]
