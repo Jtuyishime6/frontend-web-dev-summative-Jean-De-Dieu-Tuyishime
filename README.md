@@ -71,8 +71,8 @@ campus-event-planner/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/campus-event-planner.git
-cd campus-event-planner
+git clone https://github.com/Jtuyishime6/frontend-web-dev-summative-Jean-De-Dieu-Tuyishime.git
+cd frontend-web-dev-summative-Jean-De-Dieu-Tuyishime
 ```
 
 ### 2. Local Development
@@ -374,5 +374,6 @@ This project is created for educational purposes as part of the ALU Software Eng
  GitHub: [github.com/Jtuyishime6](https://github.com/Jtuyishime6)  
 
  Location: Kigali, Rwanda.
+
 
 
